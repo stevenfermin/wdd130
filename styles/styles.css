@@ -1,5 +1,10 @@
 /*Creating rules*/
 
+:root {
+    --main-color: darkblue;
+    --shadow-box: 0 0 30px gray;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +13,7 @@
 
 nav {
 
-    background-color: darkblue;
+    background-color: var(--main-color);
     padding: 10px;
 }
 
@@ -19,7 +24,7 @@ nav a {
 }
 
 h1 {
-    color: darkblue;
+    color: var(--main-color);
     text-align: center;
 }
 
@@ -40,7 +45,7 @@ aside img {
     width: 300px;
     height: auto;
     padding: 1px;
-    box-shadow: 0 0 30px gray;
+    box-shadow: var(--shadow-box);
     margin: 100px 100px 20px 100px;
 }
 
@@ -51,7 +56,7 @@ main img {
     float: right;
     border: 1px solid black;
     padding: 1px;
-    box-shadow: 0 0 30px gray;
+    box-shadow: var(--shadow-box);
 }
 
 p {
