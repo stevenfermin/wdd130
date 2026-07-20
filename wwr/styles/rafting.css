@@ -1,7 +1,4 @@
 :root {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     --accent1-color: rgb(55, 211, 216);
     --body-font: arial;
     --primary-color: #000;
