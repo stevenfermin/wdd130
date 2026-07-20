@@ -72,7 +72,7 @@ h2 {
 
 .hero img {
     display: block;
-    width: 880px;
+    width: 100%;
     height: auto;
 }
 
@@ -92,7 +92,7 @@ h2 {
     opacity: 0.712;
     align-items: center;
     position: absolute;
-    width: 835px;
+    width: 90%;
     bottom: 0;
     color: var(--white-color);
     font-size: 0.9rem;
