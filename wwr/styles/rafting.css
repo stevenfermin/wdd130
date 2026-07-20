@@ -6,6 +6,12 @@
     --white-color: #fff
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
