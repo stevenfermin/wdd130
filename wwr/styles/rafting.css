@@ -87,7 +87,7 @@ h2 {
     color: #fff;
 }
 
-article {
+.hero article {
     background-color: var(--secondary-color);
     opacity: 0.712;
     align-items: center;
