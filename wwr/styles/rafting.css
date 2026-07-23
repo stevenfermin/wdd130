@@ -161,7 +161,6 @@ figcaption {
 /*Footer Section*/
 
 footer {
-    display: flex;
     height: 100%;
     text-align: center;
     color: var(--primary-color);
@@ -170,6 +169,14 @@ footer {
 footer img {
     width: 40px;
     margin: 10px 10px;
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: right;
+    gap: 60px;
+    padding: 0 150px;
+    font-size: 1.3rem;
 }
 
 .socialmedia a {
