@@ -22,6 +22,7 @@ header,
 main,
 footer {
     width: 1200px;
+    height: 0 auto;
     margin: 0 auto;
 }
 
@@ -34,28 +35,47 @@ article {
 
 /*Header Section*/
 
-nav {
-    width: 93%;
-    padding: 5px 50px;
-    margin: 10px 0;
-    height: auto;
-    background-color: rgba(58, 59, 59, 0.712);
-    display: flex;
-    align-items: center;
-    gap: 80px;
-}
-
-header img {
-    border-radius: 100%;
-    width: 70px;
-}
-
 header a {
-    padding: 0;
-    margin: 10px;
     text-decoration: none;
     color: #fff;
+}
 
+.grid {
+    margin: 2rem auto;
+    display: grid;
+    padding: 20px;
+    grid-template-columns: 150px repeat(4, 1fr);
+    align-items: center;
+    max-width: 1200px;
+    background-color: rgba(58, 59, 59, 0.712);
+
+}
+
+.grid img {
+    grid-column: 2/2;
+    border-radius: 100%;
+    width: 120px;
+}
+
+header div {
+    grid-column: 4/5;
+}
+
+.flex ul {
+    display: flex;
+    width: 600px;
+    gap: 40px;
+    justify-items: center;
+    list-style: none;
+    font-size: 1.4rem;
+}
+
+.flex a:hover {
+    font-size: 2rem;
+}
+
+.flex li {
+    flex: 1 1 auto;
 }
 
 h1,
@@ -109,11 +129,35 @@ section h2 {
     color: #fff;
     background-color: var(--secondary-color);
     text-align: center;
-    width: 880px;
+    max-width: 1200px;
+}
+
+.lay {
+    margin: 20px;
+    display: flex;
+    font-size: 1.5rem;
+}
+
+.lay img {
+    width: 25rem;
+    height: 0 auto;
 }
 
 section p {
     color: var(--primary-color);
+}
+
+figcaption {
+    color: var(--primary-color);
+}
+
+.lay2 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.lay2 img {
+    width: 200px;
 }
 
 /*Footer Section*/
