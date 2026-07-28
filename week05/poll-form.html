@@ -5,32 +5,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Poll Form</title>
+    <link rel="stylesheet" href="styles/poll-form.css">
 </head>
 
 <body>
+    <header>
+
+    </header>
+    <h1> Poll Form</h1>
     <form>
-        <label for="fullname">Full Name</label>
-        <input type="text" id="fullname" name="fullname" required>
+        <div class="form-item column2">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required
+              placeholder="Nefi Benjamin Perez">
+        </div>
 
-        <label for="email">Email Address</label>
-        <input type="email" name="useremail" id="useremail" required>
+        <div class="form-item column2">
+            <label for="email">Email Address:</label>
+            <input type="email" name="useremail" id="useremail" required
+              placeholder="poll.form@gmail.com">
+        </div>
 
-        <label for="favbrowser">Select your favorite browser</label>
-        <select name="favbrowser" id="favbrowser">
-            <option value="google">Google Chome</option>
-            <option value="edge">Microsoft Edge</option>
-            <option value="opera">Opera/GX</option>
-            <option value="firefox">Mozilla Firefox</option>
-        </select>
+        <div class="form-item column1">
+            <label for="favbrowser">Select your favorite browser:</label>
+            <select name="favbrowser" id="favbrowser">
+                <option value="google">Google Chome</option>
+                <option value="edge">Microsoft Edge</option>
+                <option value="opera">Opera/GX</option>
+                <option value="firefox">Mozilla Firefox</option>
+            </select>
+        </div>
 
-        <label><input type="checkbox" id="pet" name="pet">Do you have a household pet?</label>
+        <div class="form-item column1">
+            <label><input type="checkbox" id="pet" name="pet"> Do you have a household pet?</label>
+        </div>
 
-        <label for="List the places you have lived"></label>
-        <textarea name="feedback" id="feedback"
-          placeholder="Seul Korea, Madrid Spain, Amsterdam Netherlands" rows="8"></textarea>
+        <div>
+            <label for="feedback">List the places you have lived:</label>
+            <textarea name="feedback" id="feedback"
+              placeholder="Seul Korea, Madrid Spain, Amsterdam Netherlands" rows="8"></textarea>
+        </div>
 
         <button type="submit">Submit Poll</button>
     </form>
+    <footer>
+
+    </footer>
 </body>
 
 </html>
