@@ -1,0 +1,85 @@
+:root {
+    --bgcolor: rgb(169, 181, 202);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    margin: 0 auto;
+    width: 650px;
+}
+
+h1 {
+    background-color: var(--bgcolor);
+    margin: 1rem;
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+form {
+    display: grid;
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: var(--bgcolor);
+    gap: 8px;
+}
+
+.column1,
+.column2,
+.column3,
+.column4 label {
+    font-size: 1.1rem;
+}
+
+textarea {
+    min-width: 350px;
+    max-width: 350px;
+    min-height: 150px;
+    max-height: 200px;
+    padding: 10px;
+}
+
+button {
+    font-weight: 800;
+    width: 350px;
+    height: 50px;
+    border-radius: 10px;
+    border: 0px;
+    margin: 10px 5px 15px;
+}
+
+button:hover {
+    background-color: navy;
+    color: white;
+}
+
+.column1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.column1 input {
+    grid-row: 2/3;
+    width: 350px;
+    height: 30px;
+}
+
+.column3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.column4 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+}
