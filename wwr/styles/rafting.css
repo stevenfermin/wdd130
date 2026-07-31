@@ -212,7 +212,6 @@ textarea {
 .direction h1 {
     /*grid-column: 1/4;*/
     width: 1200px;
-    height: 0 auto;
     padding: 16px;
     text-align: center;
     background-color: var(--secondary-color);
@@ -226,7 +225,6 @@ textarea {
     grid-row: 2/3;*/
     background-color: var(--secondary-color);
     width: 220px;
-    height: 0 auto;
     color: var(--white-color);
     font-size: 0.9rem;
     align-content: center;
