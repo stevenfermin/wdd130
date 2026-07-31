@@ -244,6 +244,12 @@ textarea {
     grid-template-columns: repeat(2, 1fr);
 }
 
+.sub iframe {
+    width: 600px;
+    height: 450px;
+    border: 0;
+}
+
 form {
     display: grid;
     width: 350px;
