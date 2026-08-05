@@ -44,10 +44,11 @@ main {
 }
 
 aside {
+    width: 840px;
+    margin: 0;
     background-color: (var(--main-color));
     color: #333;
     text-align: center;
-    width: 840px;
     grid-column: 1/2;
     grid-row: 1/2;
     position: relative;
