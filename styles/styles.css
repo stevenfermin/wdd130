@@ -15,7 +15,6 @@ header,
 footer,
 main {
     max-width: 840px;
-    height: 0 auto;
 }
 
 nav {
