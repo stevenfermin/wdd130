@@ -94,6 +94,8 @@ h2 {
 
 .hero {
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 .hero img {
@@ -114,6 +116,7 @@ h2 {
 }
 
 .hero article {
+    display: flex;
     background-color: var(--secondary-color);
     opacity: 0.712;
     align-items: center;
@@ -321,4 +324,47 @@ button {
 
 .profiles img {
     width: 200px;
+}
+
+/*for index page*/
+
+.form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    align-items: center;
+    justify-items: center;
+    gap: 20px;
+    background-color: var(--white-color);
+    border-radius: 20px;
+    border: 1px solid var(--primary-color);
+}
+
+.form h1 {
+    grid-column: 1/4;
+}
+
+.form div {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1/4;
+    grid-row: 2/4;
+}
+
+.form input {
+    width: 250px;
+    height: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form button {
+    grid-column: 1/4;
+    grid-row: 4/5;
+    width: 150px;
+    height: 0 auto;
+}
+
+.form button:hover {
+    background-color: blue;
+    color: #fff;
 }
