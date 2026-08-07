@@ -359,6 +359,8 @@ button {
 }
 
 .form button {
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
     grid-column: 1/4;
     grid-row: 4/5;
     width: 150px;
