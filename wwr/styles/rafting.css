@@ -479,14 +479,21 @@ button {
     grid-row: 3/4;
 }
 
-.s-trip1 button {
+.s-trip1 a {
+    text-align: center;
+    align-content: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    font-weight: bolder;
+    background-color: rgb(243, 241, 241);
     width: 500px;
     height: 40px;
     border: 1px solid var(--secondary-color);
     color: var(--secondary-color);
 }
 
-.s-trip1 button:hover {
+.s-trip1 a:hover {
     background-color: var(--secondary-color);
     color: var(--white-color);
 }
