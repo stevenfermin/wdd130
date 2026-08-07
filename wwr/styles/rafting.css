@@ -177,13 +177,14 @@ footer {
 }
 
 footer img {
-    width: 40px;
+    width: 30px;
     margin: 10px 10px;
 }
 
 .socialmedia {
     display: flex;
     justify-content: right;
+    align-items: center;
     gap: 60px;
     padding: 0 150px;
     font-size: 1.3rem;
@@ -193,7 +194,7 @@ footer img {
     text-decoration: none;
 }
 
-/*For contact Page*/
+/*Contact Page*/
 
 label,
 input,
@@ -213,7 +214,6 @@ textarea {
 }
 
 .direction h1 {
-    /*grid-column: 1/4;*/
     width: 1200px;
     padding: 16px;
     text-align: center;
@@ -224,8 +224,6 @@ textarea {
 .direction article {
     position: relative;
     left: 480px;
-    /*grid-column: 2/4;
-    grid-row: 2/3;*/
     background-color: var(--secondary-color);
     width: 220px;
     color: var(--white-color);
@@ -253,10 +251,13 @@ textarea {
 
 form {
     display: grid;
-    width: 350px;
+    width: 400px;
     margin: 0 auto;
     padding: 20px;
     color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    align-items: center;
+    border-radius: 5px;
 }
 
 .info {
@@ -295,9 +296,9 @@ label[for="email"] {
 }
 
 textarea {
-    min-width: 300px;
+    min-width: 350px;
     min-height: 80px;
-    max-width: 300px;
+    max-width: 350px;
     max-height: 80px;
 }
 
@@ -326,7 +327,7 @@ button {
     width: 200px;
 }
 
-/*for index page*/
+/*index page*/
 
 .form {
     display: grid;
@@ -334,7 +335,8 @@ button {
     grid-template-rows: repeat(4, 1fr);
     align-items: center;
     justify-items: center;
-    gap: 20px;
+    padding: 30px 0;
+    gap: 20px 0;
     background-color: var(--white-color);
     border-radius: 20px;
     border: 1px solid var(--primary-color);
@@ -367,4 +369,167 @@ button {
 .form button:hover {
     background-color: blue;
     color: #fff;
+}
+
+.register {
+    background-color: var(--white-color);
+    display: grid;
+    grid-column: repeat(3, 1fr);
+    gap: 20px;
+    width: 1200px;
+    height: fit-content;
+}
+
+.register form {
+    grid-column: 1/2;
+}
+
+.register div:nth-of-type(1) {
+    position: relative;
+    grid-column: 2/3;
+}
+
+.register img {
+
+    width: 270px;
+    height: 250px;
+    padding: 0;
+    margin: 20px 0 0;
+}
+
+.images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid var(--primary-color);
+    border-radius: 20px;
+}
+
+.images:hover {
+    border: 3px solid var(--primary-color);
+}
+
+.register div button {
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+    border: 1px solid var(--secondary-color);
+    background-color: #fff;
+    width: 100px;
+}
+
+.register div button:hover {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+}
+
+.register div:nth-of-type(2) {
+    position: relative;
+    grid-column: 3/4;
+}
+
+/*Trips page*/
+
+.s-trip1 {
+    width: 1200px;
+    height: 600px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    background-color: var(--white-color);
+}
+
+.s-trip1 h1 {
+    width: 1060px;
+    height: 0 auto;
+    grid-column: 1/4;
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    text-align: center;
+}
+
+.s-trip1 article {
+    position: relative;
+    right: 25px;
+    grid-column: 1/4;
+    grid-row: 2/3;
+    display: flex;
+    gap: 40px;
+    text-align: center;
+}
+
+.s-trip1 p {
+    padding: 0 20px;
+    text-align: justify;
+    color: var(--primary-color);
+}
+
+.s-trip1 img {
+    width: 300px;
+    height: 250px;
+}
+
+.s-trip1 a {
+    grid-column: 1/4;
+    grid-row: 3/4;
+}
+
+.s-trip1 button {
+    width: 500px;
+    height: 40px;
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.s-trip1 button:hover {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+}
+
+.s-trip2 {
+    background-color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    width: 1200px;
+    height: 0 auto;
+}
+
+table {
+    border: 2px solid #000;
+    border-collapse: collapse;
+    letter-spacing: 1px;
+    height: 400px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+th,
+td {
+    border: 1px solid #000;
+    padding: 8px 12px;
+    text-align: center;
+}
+
+th {
+    color: var(--white-color);
+    background-color: var(--accent1-color);
+}
+
+td {
+    color: var(--primary-color);
+}
+
+thead th,
+td {
+    height: 50px;
+    color: var(--primary-color);
+}
+
+tbody th,
+tfoot th {
+    background-color: var(--secondary-color);
 }
